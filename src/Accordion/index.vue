@@ -70,7 +70,7 @@ export default {
   &__body {
     display: block;
     width: 100%;
-    transition: height 1.2s cubic-bezier(0.218, 0.58, 0.36, 1);
+    transition: height 1s cubic-bezier(0.218, 0.58, 0.36, 1);
   }
 }
 </style>

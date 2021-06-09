@@ -1,6 +1,6 @@
 {
   "name": "@palazzinacreativa/vue-accordion",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Vue accordion animation",
   "author": "PalazzinaCreativa",
   "main": "dist/vueaccordion.umd.js",

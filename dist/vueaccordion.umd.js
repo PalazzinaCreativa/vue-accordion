@@ -202,11 +202,11 @@
     /* style */
     var __vue_inject_styles__ = function (inject) {
       if (!inject) { return }
-      inject("data-v-c890d222_0", { source: ".accordion[data-v-c890d222]{display:block;width:100%}.accordion__head[data-v-c890d222]{width:100%;display:flex;align-items:center;justify-content:space-between}.accordion__head--icon svg[data-v-c890d222]{width:.75rem}.accordion__body[data-v-c890d222]{display:block;width:100%;transition:height 1.2s cubic-bezier(.218,.58,.36,1)}", map: undefined, media: undefined });
+      inject("data-v-6f5d74aa_0", { source: ".accordion[data-v-6f5d74aa]{display:block;width:100%}.accordion__head[data-v-6f5d74aa]{width:100%;display:flex;align-items:center;justify-content:space-between}.accordion__head--icon svg[data-v-6f5d74aa]{width:.75rem}.accordion__body[data-v-6f5d74aa]{display:block;width:100%;transition:height 1s cubic-bezier(.218,.58,.36,1)}", map: undefined, media: undefined });
 
     };
     /* scoped */
-    var __vue_scope_id__ = "data-v-c890d222";
+    var __vue_scope_id__ = "data-v-6f5d74aa";
     /* module identifier */
     var __vue_module_identifier__ = undefined;
     /* functional template */
