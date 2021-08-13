@@ -2,7 +2,7 @@
   <div class="accordion" :class="{ open }">
     <div class="accordion__head" @click="toggle">
       <slot name="head" />
-      <div v-if="!disable">
+      <div v-if="!disable" class="icon-wrapper" :class="{ rotate: open }">
         <div v-if="!$slots.icon" class="accordion__head--icon">
           <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 12"><path d="M2 2l8 8 8-8" :stroke="iconColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
@@ -61,6 +61,12 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .icon-wrapper {
+      transition: transform 0.25s cubic-bezier(0.218, 0.58, 0.36, 1);
+      &.rotate {
+        transform: rotate(180deg);
+      }
+    }
     &--icon {
       svg {
         width: 0.75rem;
