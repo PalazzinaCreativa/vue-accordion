@@ -62,6 +62,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     .icon-wrapper {
+      margin-left: 1.5rem;
       transition: transform 0.25s cubic-bezier(0.218, 0.58, 0.36, 1);
       &.rotate {
         transform: rotate(180deg);
