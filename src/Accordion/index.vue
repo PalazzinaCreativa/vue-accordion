@@ -37,16 +37,16 @@ export default {
       this.open = !this.open
     },
     beforeEnter (el) {
-      el.style.height = '0';
+      el.style.height = '0px';
     },
     enter (el) {
       el.style.height = el.scrollHeight + 'px';
     },
     beforeLeave (el) {
-      el.style.height = el.scrollHeight + 'px';
+      el.style.height = '0px';
     },
     leave (el) {
-      el.style.height = '0';
+      el.style.height = '0px';
     }
   }
 }
@@ -77,6 +77,8 @@ export default {
   &__body {
     display: block;
     width: 100%;
+    position: relative;
+    overflow: hidden;
     transition: height 1s cubic-bezier(0.218, 0.58, 0.36, 1);
   }
 }
