@@ -9,7 +9,7 @@
         <slot name="icon" v-else />
       </div>
     </div>
-    <transition name="accordion" @enter="enter" @before-enter="beforeEnter" @leave="enter" @before-leave="beforeLeave">
+    <transition name="accordion" @enter="enter" @before-enter="beforeEnter" @leave="leave" @before-leave="beforeLeave">
       <div class="accordion__body" v-if="disable || open">
         <slot name="body" />
       </div>
