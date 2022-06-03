@@ -9,7 +9,7 @@
         <slot name="icon" v-else />
       </div>
     </div>
-    <transition name="accordion" @enter="enter" @before-enter="beforeEnter" @leave="leave" @before-leave="beforeLeave">
+    <transition name="accordion" @enter="enter" @before-enter="beforeEnter" @leave="leave" @before-leave="beforeLeave" @after-enter="onAfterEnter">
       <div class="accordion__body" v-if="disable || open">
         <slot name="body" />
       </div>
@@ -47,6 +47,9 @@ export default {
     },
     leave (el) {
       el.style.height = '0px';
+    },
+    onAfterEnter(el) {
+      this.$emit('changed')
     }
   }
 }
